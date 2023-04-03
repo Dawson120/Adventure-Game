@@ -15,3 +15,5 @@ const gameData = [
   {Choice: "", Text: "", Actions: ""},
   {Choice: "", Text: "", Actions: ""},
 ]
+
+export default gameData
