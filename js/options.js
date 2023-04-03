@@ -1,7 +1,7 @@
 const gameData = [
-  {choice: "Beginning", text: "Test Text", actions: ["array index 1", "array index 2"]},
-  {choice: "Secondary", text: "Deez", actions: []},
-  {choice: "", text: "", actions: []},
+  {choice: "Beginning", text: "Would You Like To Play", actions: ["Yes", "no."]},
+  {choice: "Yes", text: "Deez", actions: []},
+  {choice: "no.", text: "it worky", actions: []},
   {choice: "", text: "", actions: []},
   {choice: "", text: "", actions: []},
   {choice: "", text: "", actions: []},

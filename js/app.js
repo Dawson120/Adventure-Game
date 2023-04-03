@@ -7,19 +7,10 @@ const text = document.querySelector(".text")
 
 // Event Listeners ---------
 
-actButton.addEventListener('click', handleActButton)
+actButton.addEventListener('click', updateGame)
 
 // Funtions AKA Where the magic happens ya heard------
 
-// function handleAct(choice) {
-//   questionText.textContent = gameData.filter(
-//     data => data.choice === choice
-//   )[0].text;
-//   selector.innerHTML = gameData.filter(
-//     data => data.choice === choice)[0].actions.map(
-      // create map funtion to hold action array
-//     )
-// }
 
 function handleAct(choice) {
   const data  = gameData.find(data => data.choice === choice)
@@ -32,11 +23,21 @@ function handleAct(choice) {
   selector.innerHTML = actionDropdown;
   // console.log(actionDropdown)
 }
+// function handleActButton() {
+//   // console.log("sanity")
+//   // console.log(selector.value)
+//   // gameData.choice === selector.value
+//   if selector.value ==
+//   handleAct();
+// }
 
+function updateGame() {
+  if (selector.value === "no.") {
+    console.log("L")
+  } else {
+    console.log("gg")
+  }
+  handleAct(selector.value)
+}
 
 handleAct("Beginning");
-
-
-function handleActButton() {
-  console.log("sanity")
-}
