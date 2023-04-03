@@ -10,8 +10,10 @@ const questionText = document.querySelector(".text")
 
 // Funtions AKA Where the magic happens ya heard------
 
-function handleAct(Choice) {
-  console.log(gameData.Choice)
+function handleAct(choice) {
+  questionText.textContent = gameData.filter(
+    data => data.choice === choice
+  )[0].text;
 }
 
 handleAct("Beginning");
