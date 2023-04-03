@@ -1,11 +1,10 @@
 const gameData = [
-  {choice: "Beginning", text: "Would You Like To Play?", actions: ["Yes", "no."]},
-  {choice: "Yes", text: "Deez", actions: []},
-  {choice: "no.", text: "it worky", actions: []},
-  {choice: "", text: "", actions: []},
-  {choice: "", text: "", actions: []},
-  {choice: "", text: "", actions: []},
-  {choice: "", text: "", actions: []},
+  {choice: "Beginning", 
+  text: "Would You Like To Play?", 
+  actions: ["[Aggresive]", "[Passive]"]},
+  {choice: "[Aggresive]", 
+  text: "They tell you to buzz off", 
+  actions: ["",""]},
 ]
 
 export default gameData
