@@ -2,11 +2,12 @@ import gameData from "./options.js"
 // Constants--------
 
 const selector = document.querySelector(".selector")
-const actButton = document.querySelector(".act")
+const actButton = document.getElementById("act")
 const text = document.querySelector(".text")
 
 // Event Listeners ---------
 
+actButton.addEventListener('click', handleActButton)
 
 // Funtions AKA Where the magic happens ya heard------
 
@@ -29,7 +30,13 @@ function handleAct(choice) {
       actionDropdown += `<option value="${actions}">${actions}</option>`
     })
   selector.innerHTML = actionDropdown;
-  console.log(actionDropdown)
+  // console.log(actionDropdown)
 }
 
+
 handleAct("Beginning");
+
+
+function handleActButton() {
+  console.log("sanity")
+}
