@@ -3,7 +3,7 @@ import gameData from "./options.js"
 
 const selector = document.querySelector(".selector")
 const actButton = document.querySelector(".act")
-const questionText = document.querySelector(".text")
+const text = document.querySelector(".text")
 
 // Event Listeners ---------
 
@@ -23,6 +23,13 @@ const questionText = document.querySelector(".text")
 function handleAct(choice) {
   const data  = gameData.find(data => data.choice === choice)
   // console.log(data)
+  text.textContent = data.text;
+  let actionDropdown = "";
+    data.actions.forEach(actions => {
+      actionDropdown += `<option value="${actions}">${actions}</option>`
+    })
+  selector.innerHTML = actionDropdown;
+  console.log(actionDropdown)
 }
 
 handleAct("Beginning");
