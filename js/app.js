@@ -10,10 +10,19 @@ const questionText = document.querySelector(".text")
 
 // Funtions AKA Where the magic happens ya heard------
 
+// function handleAct(choice) {
+//   questionText.textContent = gameData.filter(
+//     data => data.choice === choice
+//   )[0].text;
+//   selector.innerHTML = gameData.filter(
+//     data => data.choice === choice)[0].actions.map(
+      // create map funtion to hold action array
+//     )
+// }
+
 function handleAct(choice) {
-  questionText.textContent = gameData.filter(
-    data => data.choice === choice
-  )[0].text;
+  const data  = gameData.find(data => data.choice === choice)
+  // console.log(data)
 }
 
 handleAct("Beginning");
