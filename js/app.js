@@ -3,49 +3,72 @@ import gameData from "./options.js"
 
 const selector = document.querySelector(".selector")
 const actButton = document.getElementById("act")
-const text = document.querySelector(".text")
 const resetButton = document.getElementById("reset")
-
+const promptText = document.querySelector(".prompt")
 // Event Listeners ---------
 
-actButton.addEventListener('click', updateGame)
+actButton.addEventListener('click', handleAct)
 resetButton.addEventListener('click', resetGame)
 
 // Funtions AKA Where the magic happens ya heard------
 
 // The Back Bone Of My Glorious Conquer👇
-function handleAct(choice) {
-  const data  = gameData.find(data => data.choice === choice)
-  // console.log(data)
-  text.textContent = data.text;
-  let actionDropdown = "";
-    data.actions.forEach(actions => {
-      actionDropdown += `<option value="${actions}">${actions}</option>`
-    })
-  selector.innerHTML = actionDropdown;
-  // console.log(actionDropdown)
+
+let currentScene = gameData.beginning
+handleAct()
+console.log(selector.value)
+
+function handleAct() {
+  const selectedAction = selector.value;
+  const nextScene = gameData[currentScene.actions[selectedAction]];
+  if (nextScene) {
+    currentScene = nextScene;
+    promptText.textContent = currentScene.text;
+    updateGame();
+  } else {
+    promptText.textContent = "Huh?";
+  }
 }
 
-
-// function handleActButton() {
-//   // console.log("sanity")
-//   // console.log(selector.value)
-//   // gameData.choice === selector.value
-//   if selector.value ==
-//   handleAct();
-// }
+function resetGame() {
+  currentScene = gameData.beginning;
+  promptText.textContent = currentScene.text;
+  updateGame();
+}
 
 function updateGame() {
-  // if (selector.value === "no.") {
-  //   console.log("L")
-  // } else {
-  //   console.log("gg")
-  // }
-  handleAct(selector.value)
+  selector.innerHTML = "";
+
+  for (const action in currentScene.actions) {
+    const option = document.createElement("option");
+    option.value = action;
+    option.textContent = currentScene.actions[action];
+    selector.appendChild(option);
+  }
 }
 
-handleAct("Beginning");
+// function handleAct() {
+//   const selectedAction = selector.value
+//   const nextScene = gameData[currentScene.actons[selectedAction]]
+//   // const data = gameData[currentScene]
+//   promptText.textContent = data.text;
+//   console.log(currentScene)
+//   for (const [actionKey, actionText] of Object.entries(data.actions)){
+//     const option = document.createElement("option")
+//     option.value = actionKey
+//     option.textContent = actionText
+//     selector.appendChild(option)
+//     }
+//   console.log("hello")
+// }
 
-function resetGame (){
-  handleAct("Beginning")
-}
+// function updateGame() {
+//   currentScene = selector.value
+//   handleAct()
+// }
+
+
+// function resetGame (){
+//   handleAct("beginning")
+// }
+
