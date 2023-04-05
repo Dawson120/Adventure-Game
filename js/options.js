@@ -52,6 +52,7 @@ const gameData = {
       text: "Great I hope you feel great about yourself. There're mosters out there pillaging and here you are. ",
       actions: {
         lose: "Cry.",
+        win: "I want to win please."
       }
     },
     "Blank": {

@@ -26,6 +26,10 @@ function handleAct() {
       gameOver()
       return;
     }
+    if (selectedAction === 'win') {
+      winCondition()
+      return;
+    }
   previousScene = currentScene;
   const nextScene = gameData[currentScene.actions[selectedAction]];
   if (nextScene) {
@@ -65,5 +69,10 @@ function updateGame() {
 
 function gameOver() {
   promptText.textContent = "Game over!";
+  console.log("L")
+}
+
+function winCondition() {
+  promptText.textContent = "You Won!";
   console.log("L")
 }
