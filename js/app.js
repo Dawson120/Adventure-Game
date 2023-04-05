@@ -5,28 +5,44 @@ const selector = document.querySelector(".selector")
 const actButton = document.getElementById("act")
 const resetButton = document.getElementById("reset")
 const promptText = document.querySelector(".prompt")
+const backButton = document.getElementById("back")
+
 // Event Listeners ---------
 
 actButton.addEventListener('click', handleAct)
 resetButton.addEventListener('click', resetGame)
-
+backButton.addEventListener('click', goBack)
 // Funtions AKA Where the magic happens ya heard------
 
 // The Back Bone Of My Glorious Conquer👇
 
 let currentScene = gameData.beginning
+let previousScene = null;
 handleAct()
-console.log(selector.value)
 
 function handleAct() {
-  const selectedAction = selector.value;
+  const selectedAction = selector.value;    
+  if (selectedAction === 'lose') {
+      gameOver()
+      return;
+    }
+  previousScene = currentScene;
   const nextScene = gameData[currentScene.actions[selectedAction]];
   if (nextScene) {
     currentScene = nextScene;
     promptText.textContent = currentScene.text;
     updateGame();
+
   } else {
-    promptText.textContent = "Huh?";
+    promptText.textContent = "You're either Dead or in the Backrooms";
+  }
+}
+
+function goBack () {
+  if (previousScene) {
+    currentScene = previousScene;
+    promptText.textContent = currentScene.text
+    updateGame()
   }
 }
 
@@ -47,28 +63,7 @@ function updateGame() {
   }
 }
 
-// function handleAct() {
-//   const selectedAction = selector.value
-//   const nextScene = gameData[currentScene.actons[selectedAction]]
-//   // const data = gameData[currentScene]
-//   promptText.textContent = data.text;
-//   console.log(currentScene)
-//   for (const [actionKey, actionText] of Object.entries(data.actions)){
-//     const option = document.createElement("option")
-//     option.value = actionKey
-//     option.textContent = actionText
-//     selector.appendChild(option)
-//     }
-//   console.log("hello")
-// }
-
-// function updateGame() {
-//   currentScene = selector.value
-//   handleAct()
-// }
-
-
-// function resetGame (){
-//   handleAct("beginning")
-// }
-
+function gameOver() {
+  promptText.textContent = "Game over!";
+  console.log("L")
+}
