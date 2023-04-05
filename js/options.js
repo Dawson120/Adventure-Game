@@ -1,82 +1,97 @@
 
-
-// const gameData = [
-//   {choice: "Beginning", 
-//   text: "Would You Like To Play?", 
-//   actions: ["[Yes]", "[No]"]},
-//   {choice: "[Yes]", 
-//   text: "They tell you to buzz off", 
-//   actions: [" "," "]},
-// ]
-
-
 const gameData = {
   beginning: {
     text: "Ready To Start?",
     actions: {
       a: "Yes!",
-      b: "No",
+      lose: "No",
     }
   },
   "No": {
     text: "Fine we'll sit here.",
     actions: {
-      a: "",
     }
   },
   "Yes!": {
     text: "You are a seasoned monster hunter, well known for your skills and bravery. You are on a journey to track down a terrifying creature that has been causing havoc in the nearby villages. As you travel, you encounter various obstacles and make important decisions that will determine your success in hunting down the monster.",
     actions: {
-      a: "Continue Left.",
-      b: "Continue Right.",
+      a: "Go left down the pathway.",
+      b: "Go right down the pathway.",
       c: "Sit and do nothing."
     }
   },
-    "Continue Left.": {
-      text: "text",
+  "Sit and do nothing.": {
+    text: "Great I hope you feel great about yourself. There are monsters out there pillaging and here you are. ",
+    actions: {
+      lose: "Cry.",
+      win: "I want to win please."
+    }
+  },
+    "Go left down the pathway.": {
+      text: "As you continue left down the pathway you are overwhelmed with the sound of the russtling trees around you. You come upon a barrelled over tree covered in deep scratches. They look fresh....",
       actions: {
-        a: " ",
-        b: " ",
-        c: " "
+        lose: "Fuck that I'm going home.",
+        b: "Crawl over the tree.",
+        c: "Crawl under the tree."
       }
     },
-    "Continue Right.": {
-      text: "You go right lol",
+    "Crawl over the tree.": {
+      text: "You shimmy your way over the tree. As you drop to your feet you are met by a towering creature. It has eyes black as marble and hair matted as wet grass.",
       actions: {
-        a: " ",
-        b: " ",
-        c: " "
+        a: "Discuss the socioeconimal climate of the word with it.",
+        b: "KILL!",
+        c: "Stare."
       }
     },
-    "Sit and do nothing.": {
-      text: "Great I hope you feel great about yourself. There're mosters out there pillaging and here you are. ",
+    "Crawl under the tree.": {
+      text: "You shimmy your way under the tree. As you come to your feet you are met by a towering creature. It has eyes black as marble and hair matted as wet grass.",
       actions: {
-        lose: "Cry.",
-        win: "I want to win please."
+        a: "Discuss the socioeconimal climate of the word with it.",
+        b: "KILL!",
+        c: "Stare."
       }
     },
-    "Blank": {
-      text: "text",
+    "Discuss the socioeconimal climate of the word with it.": {
+      text: "Turns out that the giant sloth like creature is pretty versed in the going ons of the world. You guys have a pleasant chat and become closer as friends.",
       actions: {
-        a: " ",
-        b: " ",
-        c: " "
+        a: "NOW KILL!",
+        b: "",
       }
     },
-    "Blank": {
-      text: "text",
+    "NOW KILL!": {
+      text: "Its dead now.....You're a goddamned monster.",
       actions: {
-        a: " ",
-        b: " ",
-        c: " "
+        lose: "so?",
+        win: "Father Forgive Me For I have sinned",
       }
     },
-    "Blank": {
-      text: "text",
+    "KILL!": {
+      text: "You effortlessesly cleave through the beast. Almost too easily. Oh well beast is dead.",
       actions: {
-        a: " ",
-        b: " ",
-        c: " "
+        win: "Return Home triumphetly",
+      }
+    },
+    "Stare.": {
+      text: "Um hello?",
+      actions: {
+        a: "Discuss the socioeconimal climate of the word with it.",
+        b: "KILL!",
+        c: "Stare."
+      }
+    },
+    "Go right down the pathway.": {
+      text: "There's a sign?",
+      actions: {
+        a: "Read Sign.",
+        b: "Go left down the pathway.",
+        c: "Sit and do nothing."
+      }
+    },
+    "Read Sign.": {
+      text: `"The developer hasnt yet finished this part of the game soooooo......yeah."`,
+      actions: {
+        a: "Go left down the pathway.",
+        b: "Sit and do nothing.",
       }
     },
     "Blank": {

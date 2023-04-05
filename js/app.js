@@ -74,5 +74,5 @@ function gameOver() {
 
 function winCondition() {
   promptText.textContent = "You Won!";
-  console.log("L")
+  console.log("W")
 }
