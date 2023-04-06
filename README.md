@@ -2,7 +2,7 @@
 
 <!-- Image  -->
 
-My love for old style adventure games has lead to this development. Thanks For playing.
+My love for old style adventure games has lead to this development. Thanks for playing.
 
 ## Description
 
@@ -19,7 +19,7 @@ Adventurer's Woes is a short choose your own adventure game made using Html, Css
 
 ### How To Play
 
-* Click [Launch](https://dawson-myers-unitonegame.netlify.app/)
+* Click Here [GAME](https://dawson-myers-unitonegame.netlify.app/)
 * click Reset if Game doesn't appear
 
 ## Assets
@@ -39,6 +39,7 @@ Adventurer's Woes is a short choose your own adventure game made using Html, Css
 Inspiration, code snippets, etc.
 
 * VS Code
-* GitHub
-* Html
-* Css
+* Git
+* HTML
+* CSS
+* JavaScript

@@ -84,6 +84,8 @@ function gameOver() {
 function winCondition() {
   promptText.textContent = "You Won!";
   console.log("W")
+  const sound = new Audio("");
+  sound.play();
 }
 
 function playSound() {
