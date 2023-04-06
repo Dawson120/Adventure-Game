@@ -1,17 +1,3 @@
-<!-- # Adventurer's Woes
-<!-- <Image Here> -->
-<!-- https://dawson-myers-unitonegame.netlify.app/
-
-Adventurer's Woes is a short choose your own adventure game made using Html, Css, and JavaScript about the decisions and paths that some may take as an adventurer.
-
-Assets:
-https://itch.io/game-assets -->
-
-<!-- ## IceBox:
-1. Add Sound
-2. Custom Backgrounds for scenes
-3. Deeper Story -->
-
 # Adventurer's Woes
 
 <!-- Image  -->
