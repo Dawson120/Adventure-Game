@@ -24,6 +24,9 @@ let currentScene = gameData.beginning
 let previousScene = null;
 updateGame(gameData.beginning)
 
+playBackgroundMusic("Sounds/#73 World Of Nowhere - Orchestrated.wav");
+
+
 function handleAct() {
   const selectedAction = selector.value;    
   if (selectedAction === 'lose') {
@@ -73,7 +76,7 @@ function updateGame() {
 }
 
 function gameOver() {
-  promptText.textContent = "Game over!";
+  promptText.textContent = "Seriously?";
   console.log("L");
   const sound = new Audio("Sounds/033_Denied_03.wav");
   sound.play();
@@ -96,5 +99,3 @@ function playBackgroundMusic(musicFile) {
   audio.loop = true;
   audio.play();
 }
-
-playBackgroundMusic("Sounds/#73 World Of Nowhere - Orchestrated.wav");

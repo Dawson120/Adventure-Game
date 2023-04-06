@@ -1,3 +1,6 @@
+html {
+  box-sizing: border-box;
+} 
 
 
 body {
@@ -41,8 +44,8 @@ button:active {
   
 }
 .selector {
-  max-width: 100;
-  min-width: 20px;
+  max-width: 100px;
+  min-width: 100px;
   text-align: center;
   font-size: auto;
   font-family: 'Press Start 2P', cursive;
@@ -53,7 +56,7 @@ button:active {
   text-shadow: 3px 3px 8px black;
   color: white;
   text-align: center;
-  max-width: 500px;
+  /* max-width: 500px; */
   background-image: url("Assets/UI books & more.png");
 }
 

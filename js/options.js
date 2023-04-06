@@ -71,14 +71,14 @@ const gameData = {
         lose: "so?",
         win: "Father Forgive Me For I have sinned",
       }
-      ,Sound: new Audio ()
+      ,Sound: new Audio ("Sounds/22_Slash_04.wav")
     },
     "KILL!": {
       text: "You effortlessesly cleave through the beast. Almost too easily. Oh well beast is dead.",
       actions: {
         win: "Return Home triumphetly",
       }
-      ,Sound: new Audio ()
+      ,Sound: new Audio ("Sounds/22_Slash_04.wav")
     },
     "Stare.": {
       text: "Um hello?",
@@ -106,8 +106,8 @@ const gameData = {
       }
       ,Sound: new Audio ()
     },
-    "Blank": {
-      text: "text",
+    lose: {
+      text: "Seriously",
       actions: {
         a: " ",
         b: " ",
