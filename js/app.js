@@ -6,16 +6,16 @@ const actButton = document.getElementById("act")
 const resetButton = document.getElementById("reset")
 const promptText = document.querySelector(".prompt")
 const backButton = document.getElementById("back")
-const audio = document.getElementById("buttonPress");
+// const audio = document.getElementById("buttonPress");
 // Event Listeners ---------
 
 actButton.addEventListener('click', handleAct)
 resetButton.addEventListener('click', resetGame)
 backButton.addEventListener('click', goBack)
 
-actButton.addEventListener("click", playSound);
-resetButton.addEventListener("click", playSound);
-backButton.addEventListener("click", playSound);
+// actButton.addEventListener("click", playSound);
+// resetButton.addEventListener("click", playSound);
+// backButton.addEventListener("click", playSound);
 // Funtions AKA Where the magic happens ya heard------
 
 // The Back Bone Of My Glorious Conquer👇
@@ -27,23 +27,24 @@ updateGame(gameData.beginning)
 function handleAct() {
   const selectedAction = selector.value;    
   if (selectedAction === 'lose') {
-      gameOver()
-      return;
-    }
-    if (selectedAction === 'win') {
-      winCondition()
-      return;
-    }
+    gameOver()
+    return;
+  }
+  if (selectedAction === 'win') {
+    winCondition()
+    return;
+  }
   previousScene = currentScene;
   const nextScene = gameData[currentScene.actions[selectedAction]];
   if (nextScene) {
     currentScene = nextScene;
     promptText.textContent = currentScene.text;
     updateGame();
-
+    
   } else {
     promptText.textContent = "You're either Dead or in the Backrooms";
   }
+  playSound()
 }
 
 function goBack () {
@@ -82,6 +83,9 @@ function winCondition() {
 }
 
 function playSound() {
-  audio.currentTime = 0;
-  audio.play();
+  let sound = currentScene.Sound
+  if (sound) {
+    sound.play();
+  }
+  console.log("sanity")
 }
