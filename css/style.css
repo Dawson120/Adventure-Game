@@ -3,6 +3,7 @@
 body {
   display: flex;
   justify-content: center;
+  background-image: url(/Assets/Trees\ 1.png);
 font-family: 'MedievalSharp', cursive;
 }
 
@@ -12,6 +13,24 @@ section {
   flex-direction: column;
 }
 
+#act {
+  margin: 5px;
+  padding: 15px;
+  background-color: transparent;
+  font-size: small;
+  border: 0;
+  background-image: url('/Assets/simpleStoneButton.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* background-position: center center; */
+}
+
+/* #act:active {
+  background-image: ;
+} */
+
 button {
   margin: 5px;
 }
@@ -19,6 +38,7 @@ button {
 .selector {
   text-align: center;
   max-width: 100px;
+  min-width: 100px;
 }
 
 .prompt {

@@ -76,3 +76,9 @@ function winCondition() {
   promptText.textContent = "You Won!";
   console.log("W")
 }
+
+// function changeBackgroundImage(imageUrl) {
+//   document.body.style.backgroundImage = `url('${imageUrl}')`;
+// }
+
+// changeBackgroundImage();
