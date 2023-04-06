@@ -7,12 +7,14 @@ body {
   font-family: 'Press Start 2P', cursive;
   text-shadow: 2px 2px 15px black;
   color: white;
+  background-position: center;
 }
 
 section {
   display: flex;
   align-items: center;
   flex-direction: column;
+  
 }
 
 /* .buttons {
@@ -33,15 +35,18 @@ button {
 }
 
 button:hover {
-  font-size: larger;
+  
 }
 button:active {
   
 }
 .selector {
+  max-width: 100;
+  min-width: 20px;
   text-align: center;
-  max-width: 100px;
-  min-width: 100px;
+  font-size: auto;
+  font-family: 'Press Start 2P', cursive;
+  border: ;
 }
 
 .prompt {
@@ -49,4 +54,9 @@ button:active {
   color: white;
   text-align: center;
   max-width: 500px;
+  background-image: url("Assets/UI books & more.png");
+}
+
+.title {
+
 }

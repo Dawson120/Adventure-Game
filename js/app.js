@@ -18,7 +18,7 @@ backButton.addEventListener('click', goBack)
 // backButton.addEventListener("click", playSound);
 // Funtions AKA Where the magic happens ya heard------
 
-// The Back Bone Of My Glorious Conquer👇
+// The Back Bone Of My Glorious Conquest👇
 
 let currentScene = gameData.beginning
 let previousScene = null;
@@ -74,9 +74,10 @@ function updateGame() {
 
 function gameOver() {
   promptText.textContent = "Game over!";
-  console.log("L")
+  console.log("L");
+  const sound = new Audio("Sounds/033_Denied_03.wav");
+  sound.play();
 }
-
 function winCondition() {
   promptText.textContent = "You Won!";
   console.log("W")
@@ -87,5 +88,13 @@ function playSound() {
   if (sound) {
     sound.play();
   }
-  console.log("sanity")
+  console.log(currentScene)
 }
+
+function playBackgroundMusic(musicFile) {
+  let audio = new Audio(musicFile);
+  audio.loop = true;
+  audio.play();
+}
+
+playBackgroundMusic("Sounds/#73 World Of Nowhere - Orchestrated.wav");
