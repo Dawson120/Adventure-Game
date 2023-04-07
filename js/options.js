@@ -25,7 +25,7 @@ const gameData = {
     ,Background: "url(Assets/Beach.png)"
   },
   "Sit and do nothing.": {
-    text: "Great I hope you feel great about yourself. There are monsters out there pillaging and here you are. ",
+    text: "Great, I hope you feel great about yourself. There are monsters out there pillaging and here you are. ",
     actions: {
       lose: "Cry.",
       win: "Reflect."
@@ -44,30 +44,30 @@ const gameData = {
       ,Background: "url(Assets/Clearing 4.png)"
     },
     "Crawl over the tree.": {
-      text: "You shimmy your way over the tree. As you drop to your feet you are met by a towering creature. It has eyes black as marble and hair matted as wet grass.",
+      text: "You shimmy your way over the tree. As you drop to your feet you are met by a towering creature. It has eyes black as marble and hair as matted as wet grass.",
       actions: {
-        a: "Discuss the socioeconimal climate of the word with it.",
+        a: "Discuss the socioeconimal climate of the world with it.",
         b: "KILL!",
         c: "Stare."
       }
       ,Sound: new Audio ("Sounds/30_Jump_03.wav")
     },
     "Crawl under the tree.": {
-      text: "You shimmy your way under the tree. As you come to your feet you are met by a towering creature. It has eyes black as marble and hair matted as wet grass.",
+      text: "You shimmy your way under the tree. As you come to your feet you are met by a towering creature. It has eyes black as marble and hair as matted as wet grass.",
       actions: {
-        a: "Discuss the socioeconimal climate of the word with it.",
+        a: "Discuss the socioeconimal climate of the world with it.",
         b: "KILL!",
         c: "Stare."
       }
       ,Sound: new Audio ("Sounds/03_Step_grass_03.wav")
     },
-    "Discuss the socioeconimal climate of the word with it.": {
+    "Discuss the socioeconimal climate of the world with it.": {
       text: "Turns out that the giant sloth like creature is pretty versed in the going ons of the world. You guys have a pleasant chat and become closer as friends.",
       actions: {
         a: "NOW KILL!",
         b: "Seduce",
       }
-      ,Sound: new Audio ("")
+      ,Sound: new Audio ("Sounds/001_Hover_01.wav")
     },
     "NOW KILL!": {
       text: "Its dead now.....You're a goddamned monster.",
@@ -85,7 +85,7 @@ const gameData = {
       ,Sound: new Audio ("Sounds/22_Slash_04.wav")
     },
     "Stare.": {
-      text: "Um hello?",
+      text: "...",
       actions: {
         a: "Discuss the socioeconimal climate of the word with it.",
         b: "KILL!",
@@ -123,6 +123,22 @@ const gameData = {
       actions: {
         a: "Blow Kisses",
         b: "Instill False Sense of Security Upon The Monster",
+      }
+      ,Sound: new Audio ("Sounds/051_use_item_01.wav")
+    },
+    "Instill False Sense of Security Upon The Monster": {
+      text: "",
+      actions: {
+        a: "",
+        b: "",
+      }
+      ,Sound: new Audio ("Sounds/051_use_item_01.wav")
+    },
+    "Blow Kisses": {
+      text: "It Blushes",
+      actions: {
+        a: "Blow More Kisses",
+        b: "",
       }
       ,Sound: new Audio ("Sounds/051_use_item_01.wav")
     },

@@ -6,7 +6,6 @@ const actButton = document.getElementById("act")
 const resetButton = document.getElementById("reset")
 const promptText = document.querySelector(".prompt")
 const backButton = document.getElementById("back")
-const backGrnd = document.getElementById("body")
 
 // Event Listeners ---------
 
@@ -20,7 +19,6 @@ backButton.addEventListener('click', goBack)
 
 let currentScene = gameData.beginning
 let previousScene = null;
-// updateGame(gameData.beginning)
 
 function handleAct() {
   const selectedAction = selector.value;    
@@ -42,6 +40,7 @@ function handleAct() {
   } else {
     promptText.textContent = "You're either Dead or in the Backrooms";
   }
+  updateGame()
   playSound()
   setBackground()
 }
@@ -58,7 +57,6 @@ function resetGame() {
   currentScene = gameData.beginning;
   promptText.textContent = currentScene.text;
   updateGame();
-  setBackground()
   console.log("reset")
 }
 
@@ -75,12 +73,14 @@ function updateGame() {
 
 function gameOver() {
   promptText.textContent = "Seriously?";
+  promptText.classList.add("animate__animated", "animate__wobble");
   console.log("L");
   const sound = new Audio("Sounds/033_Denied_03.wav");
   sound.play();
 }
 function winCondition() {
   promptText.textContent = "You Won!";
+  promptText.classList.add("animate__animated", "animate__bounceIn");
   console.log("W")
   const sound = new Audio("Sounds/winfantasia-6912.mp3");
   sound.play();
@@ -94,7 +94,9 @@ function playSound() {
 }
 
 function setBackground() {
-  const backgroundImage = document.querySelector('body');
-  backgroundImage.style.backgroundImage = selectedAction.Background;
-  console.log('backgrnd')
+  let background = currentScene.Background
+  if (background) {
+    document.body.style.backgroundImage = currentScene.Background;;
+  }
+  return
 }
