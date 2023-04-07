@@ -5,7 +5,7 @@ html {
 body {
   display: flex;
   justify-content: center;
-  background-image: url(/Assets/Trees\ 1.png);
+  background-image: url(/Assets/Trees1.png);
   font-family: 'Press Start 2P', cursive;
   text-shadow: 2px 2px 15px black;
   color: white;

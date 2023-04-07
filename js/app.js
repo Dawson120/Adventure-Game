@@ -56,6 +56,7 @@ function goBack () {
 function resetGame() {
   currentScene = gameData.beginning;
   promptText.textContent = currentScene.text;
+  document.body.style.backgroundImage = "url(Assets/Trees1.png)";
   updateGame();
   console.log("reset")
 }

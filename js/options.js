@@ -6,7 +6,7 @@ const gameData = {
       a: "Yes!",
       lose: "No",
     }
-    ,Background: "url(Assets/Trees 1.png)"
+    ,Background: "url(Assets/Trees1.png)"
   },
   "No": {
     text: "Fine we'll sit here.",
@@ -31,7 +31,7 @@ const gameData = {
       win: "Reflect."
     }
     ,Sound: new Audio ("Sounds/45_Landing_01.wav")
-    ,Background: "url(Assets/Clearing 4.png)"
+    ,Background: "url(Assets/Clearing4.png)"
   },
     "Go left down the pathway.": {
       text: "As you continue left down the pathway you are overwhelmed with the sound of the russtling trees around you. You come upon a barrelled over tree covered in deep scratches. They look fresh....",
@@ -41,7 +41,7 @@ const gameData = {
         c: "Crawl under the tree."
       }
       ,Sound: new Audio ("Sounds/8 Bit Footsteps - Sound Effect.mp3")
-      ,Background: "url(Assets/Clearing 4.png)"
+      ,Background: "url(Assets/Clearing4.png)"
     },
     "Crawl over the tree.": {
       text: "You shimmy your way over the tree. As you drop to your feet you are met by a towering creature. It has eyes black as marble and hair as matted as wet grass.",
@@ -87,7 +87,7 @@ const gameData = {
     "Stare.": {
       text: "...",
       actions: {
-        a: "Discuss the socioeconimal climate of the word with it.",
+        a: "Discuss the socioeconimal climate of the world with it.",
         b: "KILL!",
         c: "Stare."
       }
@@ -127,10 +127,10 @@ const gameData = {
       ,Sound: new Audio ("Sounds/051_use_item_01.wav")
     },
     "Instill False Sense of Security Upon The Monster": {
-      text: "",
+      text: "You have gaslit the monster into liking you.",
       actions: {
-        a: "",
-        b: "",
+        win: "Trick the Monster Into Not Harming Anyone",
+        b: "NOW KILL!",
       }
       ,Sound: new Audio ("Sounds/051_use_item_01.wav")
     },
@@ -138,9 +138,25 @@ const gameData = {
       text: "It Blushes",
       actions: {
         a: "Blow More Kisses",
-        b: "",
+        b: "NOW KILL!",
       }
       ,Sound: new Audio ("Sounds/051_use_item_01.wav")
+    },
+    "Blow More Kisses": {
+      text: "This is getting out of hand...",
+      actions: {
+        a: "Blow Even More Kisses",
+        b: "Seduce Narrator",
+      }
+      ,Sound: new Audio ("Sounds/051_use_item_01.wav")
+    },
+    "Seduce Narrator": {
+      text: "😳",
+      actions: {
+        win: "Kiss?",
+        lose: "KILL NARRATOR",
+      }
+      ,Sound: new Audio ("Sounds/22_Slash_04.wav")
     },
 }
 export default gameData
