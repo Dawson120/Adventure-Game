@@ -38,3 +38,8 @@ Inspiration, code snippets, etc.
 * JavaScript
 * Dall-E 2
 * MidJourney
+
+## Future Plans:
+* Add More Backgrounds
+* Add deeper story
+* Add more complex win conditions
