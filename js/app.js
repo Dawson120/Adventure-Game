@@ -60,6 +60,7 @@ function resetGame() {
   document.body.style.backgroundImage = "url(Assets/Trees1.png)";
   promptText.classList.remove("animate__animated", "animate__wobble");
   promptText.classList.remove("animate__animated", "animate__bounceIn");
+  selector.disabled = false;
   updateGame();
   console.log("reset")
 }
@@ -73,6 +74,8 @@ function updateGame() {
     option.textContent = currentScene.actions[action];
     selector.appendChild(option);
   }
+  promptText.classList.remove("animate__animated", "animate__wobble");
+  promptText.classList.remove("animate__animated", "animate__bounceIn");
 }
 
 function gameOver() {
@@ -81,6 +84,7 @@ function gameOver() {
   console.log("L");
   const sound = new Audio("Sounds/033_Denied_03.wav");
   sound.play();
+  selector.disabled = true
 }
 function winCondition() {
   promptText.textContent = "You Won!";
@@ -88,6 +92,7 @@ function winCondition() {
   console.log("W")
   const sound = new Audio("Sounds/winfantasia-6912.mp3");
   sound.play();
+  selector.disabled = true
 }
 
 function playSound() {
