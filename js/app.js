@@ -57,6 +57,8 @@ function resetGame() {
   currentScene = gameData.beginning;
   promptText.textContent = currentScene.text;
   document.body.style.backgroundImage = "url(Assets/Trees1.png)";
+  promptText.classList.remove("animate__animated", "animate__wobble");
+  promptText.classList.remove("animate__animated", "animate__bounceIn");
   updateGame();
   console.log("reset")
 }

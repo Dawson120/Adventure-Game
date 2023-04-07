@@ -70,6 +70,7 @@ const gameData = {
         b: "Seduce",
       }
       ,Sound: new Audio ("Sounds/001_Hover_01.wav")
+      ,Background: "url(Assets/FantasyLandscapes/sloth.png)"
     },
     "NOW KILL!": {
       text: "Its dead now.....You're a goddamned monster.",
