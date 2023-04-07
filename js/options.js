@@ -41,7 +41,7 @@ const gameData = {
         c: "Crawl under the tree."
       }
       ,Sound: new Audio ("Sounds/8 Bit Footsteps - Sound Effect.mp3")
-      ,Background: "url(Assets/Clearing4.png)"
+      ,Background: "url(Assets/FantasyLandscapes/Dark3.png)"
     },
     "Crawl over the tree.": {
       text: "You shimmy your way over the tree. As you drop to your feet you are met by a towering creature. It has eyes black as marble and hair as matted as wet grass.",
@@ -51,6 +51,7 @@ const gameData = {
         c: "Stare."
       }
       ,Sound: new Audio ("Sounds/30_Jump_03.wav")
+      ,Background: "url(Assets/FantasyLandscapes/Cave.png)"
     },
     "Crawl under the tree.": {
       text: "You shimmy your way under the tree. As you come to your feet you are met by a towering creature. It has eyes black as marble and hair as matted as wet grass.",
@@ -60,6 +61,7 @@ const gameData = {
         c: "Stare."
       }
       ,Sound: new Audio ("Sounds/03_Step_grass_03.wav")
+      ,Background: "url(Assets/FantasyLandscapes/Cave.png)"
     },
     "Discuss the socioeconimal climate of the world with it.": {
       text: "Turns out that the giant sloth like creature is pretty versed in the going ons of the world. You guys have a pleasant chat and become closer as friends.",
@@ -92,6 +94,7 @@ const gameData = {
         c: "Stare."
       }
       ,Sound: new Audio ("Sounds/39_Block_03.wav")
+      ,Background: "url(Assets/FantasyLandscapes/sloth.png)"
     },
     "Go right down the pathway.": {
       text: "There's a sign?",

@@ -1,6 +1,6 @@
 # Adventurer's Woes
 
-<!-- Image  -->
+![adventurer'swoes](Assets/Adventurer'sWoes.png)
 
 My love for old style adventure games has lead to this development. Thanks for playing.
 
@@ -20,19 +20,12 @@ Adventurer's Woes is a short choose your own adventure game made using Html, Css
 ### How To Play
 
 * Click Here [GAME](https://adventurers-woes.netlify.app/)
-* click Reset if Game doesn't appear
+* Click Reset
+* Use dropdown to make selection
 
 ## Assets
 
 * [Itch.io](https://itch.io/game-assets/free)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
 
 ## Technologies Used
 
