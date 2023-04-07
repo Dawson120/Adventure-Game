@@ -35,14 +35,9 @@ button {
   background-position: center;
   font-family: 'Press Start 2P', cursive;
   border: 0;
+  cursor: pointer;
 }
 
-button:hover {
-  
-}
-button:active {
-  
-}
 .selector {
   max-width: 100px;
   min-width: 100px;
@@ -56,8 +51,7 @@ button:active {
   text-shadow: 3px 3px 8px black;
   color: white;
   text-align: center;
-  /* max-width: 500px; */
-  background-image: url("Assets/UI books & more.png");
+  max-width: 500px;
 }
 
 .title {

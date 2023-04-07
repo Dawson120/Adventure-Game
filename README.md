@@ -19,7 +19,7 @@ Adventurer's Woes is a short choose your own adventure game made using Html, Css
 
 ### How To Play
 
-* Click Here [GAME](https://dawson-myers-unitonegame.netlify.app/)
+* Click Here [GAME](https://adventurers-woes.netlify.app/)
 * click Reset if Game doesn't appear
 
 ## Assets

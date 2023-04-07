@@ -6,16 +6,13 @@ const actButton = document.getElementById("act")
 const resetButton = document.getElementById("reset")
 const promptText = document.querySelector(".prompt")
 const backButton = document.getElementById("back")
-// const audio = document.getElementById("buttonPress");
+
 // Event Listeners ---------
 
 actButton.addEventListener('click', handleAct)
 resetButton.addEventListener('click', resetGame)
 backButton.addEventListener('click', goBack)
 
-// actButton.addEventListener("click", playSound);
-// resetButton.addEventListener("click", playSound);
-// backButton.addEventListener("click", playSound);
 // Funtions AKA Where the magic happens ya heard------
 
 // The Back Bone Of My Glorious Conquest👇
@@ -23,9 +20,6 @@ backButton.addEventListener('click', goBack)
 let currentScene = gameData.beginning
 let previousScene = null;
 updateGame(gameData.beginning)
-
-playBackgroundMusic("Sounds/#73 World Of Nowhere - Orchestrated.wav");
-
 
 function handleAct() {
   const selectedAction = selector.value;    
@@ -84,7 +78,7 @@ function gameOver() {
 function winCondition() {
   promptText.textContent = "You Won!";
   console.log("W")
-  const sound = new Audio(" ");
+  const sound = new Audio("Sounds/8 BIT Victory sound effect.mp3");
   sound.play();
 }
 

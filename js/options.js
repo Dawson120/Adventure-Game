@@ -26,7 +26,6 @@ const gameData = {
     text: "Great I hope you feel great about yourself. There are monsters out there pillaging and here you are. ",
     actions: {
       lose: "Cry.",
-      win: "I want to win please."
     }
     ,Sound: new Audio ()
   },
@@ -37,7 +36,7 @@ const gameData = {
         b: "Crawl over the tree.",
         c: "Crawl under the tree."
       }
-      ,Sound: new Audio ("Sounds/013_Confirm_03.wav")
+      ,Sound: new Audio ("Sounds/8 Bit Footsteps - Sound Effect.mp3")
     },
     "Crawl over the tree.": {
       text: "You shimmy your way over the tree. As you drop to your feet you are met by a towering creature. It has eyes black as marble and hair matted as wet grass.",
@@ -55,7 +54,7 @@ const gameData = {
         b: "KILL!",
         c: "Stare."
       }
-      ,Sound: new Audio ()
+      ,Sound: new Audio ("Sounds/03_Step_grass_03.wav")
     },
     "Discuss the socioeconimal climate of the word with it.": {
       text: "Turns out that the giant sloth like creature is pretty versed in the going ons of the world. You guys have a pleasant chat and become closer as friends.",
@@ -63,7 +62,7 @@ const gameData = {
         a: "NOW KILL!",
         b: "",
       }
-      ,Sound: new Audio ()
+      ,Sound: new Audio ("")
     },
     "NOW KILL!": {
       text: "Its dead now.....You're a goddamned monster.",
@@ -87,7 +86,7 @@ const gameData = {
         b: "KILL!",
         c: "Stare."
       }
-      ,Sound: new Audio ()
+      ,Sound: new Audio ("Sounds/39_Block_03.wav")
     },
     "Go right down the pathway.": {
       text: "There's a sign?",
@@ -96,7 +95,7 @@ const gameData = {
         b: "Go left down the pathway.",
         c: "Sit and do nothing."
       }
-      ,Sound: new Audio ()
+      ,Sound: new Audio ("Sounds/8 Bit Footsteps - Sound Effect.mp3")
     },
     "Read Sign.": {
       text: `"The developer hasnt yet finished this part of the game soooooo......yeah."`,
@@ -104,7 +103,7 @@ const gameData = {
         a: "Go left down the pathway.",
         b: "Sit and do nothing.",
       }
-      ,Sound: new Audio ()
+      ,Sound: new Audio ("Sounds/45_Landing_01.wav")
     },
     lose: {
       text: "Seriously",
