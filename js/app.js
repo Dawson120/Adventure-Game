@@ -61,6 +61,7 @@ function resetGame() {
   promptText.classList.remove("animate__animated", "animate__wobble");
   promptText.classList.remove("animate__animated", "animate__bounceIn");
   selector.disabled = false;
+  backButton.disabled = false;
   updateGame();
   console.log("reset")
 }
@@ -85,6 +86,7 @@ function gameOver() {
   const sound = new Audio("Sounds/033_Denied_03.wav");
   sound.play();
   selector.disabled = true
+  backButton.disabled = true
 }
 function winCondition() {
   promptText.textContent = "You Won!";
@@ -92,6 +94,7 @@ function winCondition() {
   console.log("W")
   const sound = new Audio("Sounds/winfantasia-6912.mp3");
   sound.play();
+  backButton.disabled = true
   selector.disabled = true
 }
 
