@@ -15,7 +15,7 @@ Adventurer's Woes is a short choose your own adventure game made using Html, Css
 * Requires latest version of OS
 * ex. Windows 10
 
-### 💥 [GAME](https://dawson-myers-unitonegame.netlify.app/) 💥
+### 💥 [GAME](https://adventurers-woes.netlify.app/) 💥
 
 ### How To Play
 
@@ -25,7 +25,7 @@ Adventurer's Woes is a short choose your own adventure game made using Html, Css
 
 ## Assets
 
-* [Itch.io](https://itch.io/game-assets/free)
+* [Google Drive](https://drive.google.com/drive/folders/12MLLKKpNPBz7X5H0w5UYDksSF6fjjAGP?usp=sharing)
 
 ## Technologies Used
 
@@ -36,3 +36,4 @@ Inspiration, code snippets, etc.
 * HTML
 * CSS
 * JavaScript
+* Dall-E 2
