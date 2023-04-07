@@ -100,9 +100,9 @@ button:hover {
 
 @keyframes drift {
 	from {
-		transform: translateX(-1000px);
+		transform: translateX(-900px);
 	}
 	to {
-		transform: translateX(1000px);
+		transform: translateX(900px);
 	}
 }
