@@ -6,6 +6,7 @@ const actButton = document.getElementById("act")
 const resetButton = document.getElementById("reset")
 const promptText = document.querySelector(".prompt")
 const backButton = document.getElementById("back")
+const backGrnd = document.getElementById("body")
 
 // Event Listeners ---------
 
@@ -19,7 +20,7 @@ backButton.addEventListener('click', goBack)
 
 let currentScene = gameData.beginning
 let previousScene = null;
-updateGame(gameData.beginning)
+// updateGame(gameData.beginning)
 
 function handleAct() {
   const selectedAction = selector.value;    
@@ -57,6 +58,8 @@ function resetGame() {
   currentScene = gameData.beginning;
   promptText.textContent = currentScene.text;
   updateGame();
+  setBackground()
+  console.log("reset")
 }
 
 function updateGame() {
@@ -79,7 +82,7 @@ function gameOver() {
 function winCondition() {
   promptText.textContent = "You Won!";
   console.log("W")
-  const sound = new Audio("Sounds/8 BIT Victory sound effect.mp3");
+  const sound = new Audio("Sounds/winfantasia-6912.mp3");
   sound.play();
 }
 
@@ -88,11 +91,10 @@ function playSound() {
   if (sound) {
     sound.play();
   }
-  console.log(currentScene)
 }
 
 function setBackground() {
   const backgroundImage = document.querySelector('body');
-  backgroundImage.style.backgroundImage = currentScene.Background;
-  console.log('sanity')
+  backgroundImage.style.backgroundImage = selectedAction.Background;
+  console.log('backgrnd')
 }

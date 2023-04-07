@@ -2,7 +2,6 @@ html {
   box-sizing: border-box;
 } 
 
-
 body {
   display: flex;
   justify-content: center;
@@ -11,7 +10,7 @@ body {
   text-shadow: 2px 2px 15px black;
   color: white;
   background-position: center center;
-  margin-top: 100px;
+  margin-top: 75px;
   /* background-repeat: no-repeat; */
 }
 
@@ -22,9 +21,6 @@ section {
   
 }
 
-/* .buttons {
-  size: 1500px;
-} */
 
 button {
   margin: 2px;

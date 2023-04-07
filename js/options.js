@@ -6,6 +6,7 @@ const gameData = {
       a: "Yes!",
       lose: "No",
     }
+    ,Background: "url(Assets/Trees 1.png)"
   },
   "No": {
     text: "Fine we'll sit here.",
@@ -27,8 +28,10 @@ const gameData = {
     text: "Great I hope you feel great about yourself. There are monsters out there pillaging and here you are. ",
     actions: {
       lose: "Cry.",
+      win: "Reflect."
     }
-    ,Sound: new Audio ()
+    ,Sound: new Audio ("Sounds/45_Landing_01.wav")
+    ,Background: "url(Assets/Clearing 4.png)"
   },
     "Go left down the pathway.": {
       text: "As you continue left down the pathway you are overwhelmed with the sound of the russtling trees around you. You come upon a barrelled over tree covered in deep scratches. They look fresh....",
@@ -38,6 +41,7 @@ const gameData = {
         c: "Crawl under the tree."
       }
       ,Sound: new Audio ("Sounds/8 Bit Footsteps - Sound Effect.mp3")
+      ,Background: "url(Assets/Clearing 4.png)"
     },
     "Crawl over the tree.": {
       text: "You shimmy your way over the tree. As you drop to your feet you are met by a towering creature. It has eyes black as marble and hair matted as wet grass.",
@@ -61,7 +65,7 @@ const gameData = {
       text: "Turns out that the giant sloth like creature is pretty versed in the going ons of the world. You guys have a pleasant chat and become closer as friends.",
       actions: {
         a: "NOW KILL!",
-        b: "",
+        b: "Seduce",
       }
       ,Sound: new Audio ("")
     },
@@ -106,13 +110,21 @@ const gameData = {
       }
       ,Sound: new Audio ("Sounds/45_Landing_01.wav")
     },
-    lose: {
-      text: "Seriously",
+    "Seduce": {
+      text: "It's super effective.",
       actions: {
-        a: " ",
-        b: " ",
-        c: " "
+        a: "Blow Kisses",
+        b: "Instill False Sense of Security Upon The Monster",
       }
+      ,Sound: new Audio ("Sounds/051_use_item_01.wav")
+    },
+    "Seduce": {
+      text: "It's super effective.",
+      actions: {
+        a: "Blow Kisses",
+        b: "Instill False Sense of Security Upon The Monster",
+      }
+      ,Sound: new Audio ("Sounds/051_use_item_01.wav")
     },
 }
 export default gameData
