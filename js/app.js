@@ -19,6 +19,7 @@ backButton.addEventListener('click', goBack)
 
 let currentScene = gameData.beginning
 let previousScene = null;
+resetGame()
 
 function handleAct() {
   const selectedAction = selector.value;    
