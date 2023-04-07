@@ -149,7 +149,7 @@ const gameData = {
     "Blow More Kisses": {
       text: "This is getting out of hand...",
       actions: {
-        a: "Blow Even More Kisses",
+        win: "Blow Even More Kisses",
         b: "Seduce Narrator",
       }
       ,Sound: new Audio ("Sounds/051_use_item_01.wav")
