@@ -37,3 +37,4 @@ Inspiration, code snippets, etc.
 * CSS
 * JavaScript
 * Dall-E 2
+* MidJourney

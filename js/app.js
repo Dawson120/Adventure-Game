@@ -63,7 +63,6 @@ function resetGame() {
   selector.disabled = false;
   backButton.disabled = false;
   updateGame();
-  console.log("reset")
 }
 
 function updateGame() {
@@ -82,7 +81,6 @@ function updateGame() {
 function gameOver() {
   promptText.textContent = "Seriously?";
   promptText.classList.add("animate__animated", "animate__wobble");
-  console.log("L");
   const sound = new Audio("Sounds/033_Denied_03.wav");
   sound.play();
   selector.disabled = true
@@ -91,7 +89,6 @@ function gameOver() {
 function winCondition() {
   promptText.textContent = "You Won!";
   promptText.classList.add("animate__animated", "animate__bounceIn");
-  console.log("W")
   const sound = new Audio("Sounds/winfantasia-6912.mp3");
   sound.play();
   backButton.disabled = true
