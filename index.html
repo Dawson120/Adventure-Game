@@ -39,5 +39,24 @@
     <button id="pause">Pause</button>
   </Section>
   </Section>
+  <audio id="bgMusic" src="Sounds/8 Bit RPG Game Music(32kbps).mp3" loop></audio>
+<script>
+  const bgMusic = document.getElementById('bgMusic');
+  const playButton = document.getElementById('play');
+  const pauseButton = document.getElementById('pause');
+  
+  playButton.addEventListener('click', function() {
+    bgMusic.play();
+    bgMusic.volume = 0.2;
+    playButton.style.display = 'none';
+    pauseButton.style.display = 'inline-block';
+  });
+  
+  pauseButton.addEventListener('click', function() {
+    bgMusic.pause();
+    playButton.style.display = 'inline-block';
+    pauseButton.style.display = 'none';
+  });
+</script>
 </body>
 </html>
