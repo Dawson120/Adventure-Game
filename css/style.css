@@ -10,7 +10,9 @@ body {
   font-family: 'Press Start 2P', cursive;
   text-shadow: 2px 2px 15px black;
   color: white;
-  background-position: center;
+  background-position: center center;
+  margin-top: 100px;
+  /* background-repeat: no-repeat; */
 }
 
 section {
@@ -39,12 +41,14 @@ button {
 }
 
 .selector {
+  min-height: 25px;
   max-width: 100px;
   min-width: 100px;
   text-align: center;
   font-size: auto;
   font-family: 'Press Start 2P', cursive;
   border: ;
+  border-radius: 10px;
 }
 
 .prompt {

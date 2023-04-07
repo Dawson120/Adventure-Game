@@ -42,6 +42,7 @@ function handleAct() {
     promptText.textContent = "You're either Dead or in the Backrooms";
   }
   playSound()
+  setBackground()
 }
 
 function goBack () {
@@ -88,4 +89,10 @@ function playSound() {
     sound.play();
   }
   console.log(currentScene)
+}
+
+function setBackground() {
+  const backgroundImage = document.querySelector('body');
+  backgroundImage.style.backgroundImage = currentScene.Background;
+  console.log('sanity')
 }

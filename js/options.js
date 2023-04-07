@@ -21,6 +21,7 @@ const gameData = {
       c: "Sit and do nothing."
     },
     Sound: new Audio("Sounds/013_Confirm_03.wav")
+    ,Background: "url(Assets/Beach.png)"
   },
   "Sit and do nothing.": {
     text: "Great I hope you feel great about yourself. There are monsters out there pillaging and here you are. ",
