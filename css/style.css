@@ -12,18 +12,6 @@ body {
   background-image: url(/Assets/Trees1.png);
   font-family: 'Press Start 2P', cursive;
   line-height: 20px;
-  text-shadow: 0 1px 0 #757575, 
-  0 2px 0 #161616,
-  0 3px 0 #000000,
-  0 4px 0 #000000,
-  0 5px 0 #000000,
-  0 6px 1px rgba(0,0,0,.1),
-  0 0 5px rgba(0,0,0,.1),
-  0 1px 3px rgba(0,0,0,.3),
-  0 3px 5px rgba(0,0,0,.2),
-  0 5px 10px rgba(0,0,0,.25),
-  0 10px 10px rgba(0,0,0,.2),
-  0 20px 20px rgba(0,0,0,.15);
   color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -77,6 +65,21 @@ button:hover {
 }
 
 .prompt {
+  color: black;
+  text-align: center;
+  max-width: 500px;
+  margin: 2px;
+  padding: 6px 15px;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 10px;
+}
+
+.lildude {
+  animation: drift 15s linear infinite;
+}
+
+#title, .question {
   text-shadow: 0 1px 0 #757575, 
   0 2px 0 #161616,
   0 3px 0 #000000,
@@ -89,13 +92,6 @@ button:hover {
   0 5px 10px rgba(0,0,0,.25),
   0 10px 10px rgba(0,0,0,.2),
   0 20px 20px rgba(0,0,0,.15);
-  color: white;
-  text-align: center;
-  max-width: 500px;
-}
-
-.lildude {
-  animation: drift 15s linear infinite;
 }
 
 @keyframes drift {
