@@ -34,7 +34,7 @@ const gameData = {
     ,Background: "url(Assets/Clearing4.png)"
   },
     "Go left down the pathway.": {
-      text: "As you continue left down the pathway you are overwhelmed with the sound of the russtling trees around you. You come upon a barrelled over tree covered in deep scratches. They look fresh....",
+      text: "As you continue left down the pathway you are overwhelmed with the sound of the rustling trees around you. You come upon a barrelled-over tree covered in deep scratches. They look fresh....",
       actions: {
         lose: "Screw that I'm going home.",
         b: "Crawl over the tree.",
@@ -46,7 +46,7 @@ const gameData = {
     "Crawl over the tree.": {
       text: "You shimmy your way over the tree. As you drop to your feet you are met by a towering creature. It has eyes black as marble and hair as matted as wet grass.",
       actions: {
-        a: "Discuss the socioeconimal climate of the world with it.",
+        a: "Discuss the socioeconomic climate of the world with it.",
         b: "KILL!",
         c: "Stare."
       }
@@ -56,15 +56,15 @@ const gameData = {
     "Crawl under the tree.": {
       text: "You shimmy your way under the tree. As you come to your feet you are met by a towering creature. It has eyes black as marble and hair as matted as wet grass.",
       actions: {
-        a: "Discuss the socioeconimal climate of the world with it.",
+        a: "Discuss the socioeconomic climate of the world with it.",
         b: "KILL!",
         c: "Stare."
       }
       ,Sound: new Audio ("Sounds/03_Step_grass_03.wav")
       ,Background: "url(Assets/FantasyLandscapes/Cave.png)"
     },
-    "Discuss the socioeconimal climate of the world with it.": {
-      text: "Turns out that the giant sloth like creature is pretty versed in the going ons of the world. You guys have a pleasant chat and become closer as friends.",
+    "Discuss the socioeconomic climate of the world with it.": {
+      text: "Turns out that the giant sloth-like creature is pretty versed in the going ons of the world. You guys have a pleasant chat and become closer as friends.",
       actions: {
         a: "NOW KILL!",
         b: "Seduce",
@@ -73,24 +73,24 @@ const gameData = {
       ,Background: "url(Assets/FantasyLandscapes/sloth.png)"
     },
     "NOW KILL!": {
-      text: "Its dead now.....You're a goddamned monster.",
+      text: "It's dead now.....You're a goddamned monster.",
       actions: {
-        lose: "so?",
+        lose: "So?",
         win: "Father Forgive Me For I have sinned",
       }
       ,Sound: new Audio ("Sounds/22_Slash_04.wav")
     },
     "KILL!": {
-      text: "You effortlessesly cleave through the beast. Almost too easily. Oh well beast is dead.",
+      text: "You effortlessly cleave through the beast. Almost too easily. Oh well beast is dead.",
       actions: {
-        win: "Return Home triumphetly",
+        win: "Return Home triumphantly",
       }
       ,Sound: new Audio ("Sounds/22_Slash_04.wav")
     },
     "Stare.": {
       text: "...",
       actions: {
-        a: "Discuss the socioeconimal climate of the world with it.",
+        a: "Discuss the socioeconomic climate of the world with it.",
         b: "KILL!",
         c: "Stare."
       }
@@ -107,7 +107,7 @@ const gameData = {
       ,Sound: new Audio ("Sounds/8 Bit Footsteps - Sound Effect.mp3")
     },
     "Read Sign.": {
-      text: `"The developer hasnt yet finished this part of the game soooooo......yeah."`,
+      text: `"The developer hasn't yet finished this part of the game soooooo......yeah."`,
       actions: {
         a: "Go left down the pathway.",
         b: "Sit and do nothing.",
