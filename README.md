@@ -2,17 +2,17 @@
 
 ![adventurer'swoes](Assets/Adventurer'sWoes.png)
 
-My love for old style adventure games has lead to this development. Thanks for playing!
+My love for old-style adventure games has led to this development. Thanks for playing!
 
 ## Description
 
-Adventurer's Woes is a short choose your own adventure game made using Html, Css, and JavaScript about the decisions and paths that some may take as an adventurer.
+Adventurer's Woes is a short choose-your-own-adventure game made using Html, CSS, and JavaScript about the decisions and paths that some may take as an adventurer.
 
 ## Getting Started
 
 ### Requirements
 
-* Requires latest version of OS
+* Requires the latest version of OS
 * ex. Windows 10
 
 ### 💥 [GAME](https://adventurers-woes.netlify.app/) 💥
@@ -20,7 +20,7 @@ Adventurer's Woes is a short choose your own adventure game made using Html, Css
 ### How To Play
 
 * Click Here [GAME](https://adventurers-woes.netlify.app/)
-* Use Dropdown To Make Selection
+* Use Dropdown To Make the Selection
 
 ## Assets
 
